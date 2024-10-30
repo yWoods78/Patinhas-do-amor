@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Mont-ExtraLight';
+    src: url('fonts/Mont-ExtraLight.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont-Heavy';
+    src: url('fonts/Mont-Heavy.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Definindo as cores principais do site */
+body {
+    background-color: #80c2b6;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    align-items: center;
+    z-index: 1000;
+    background-color: #80c2b6;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    /* Links com a cor de vinho */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+}
+
+.main {
+    display: none;
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.headers {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.headers span {
+    padding: 15px;
+    height: 30px;
+    width: 100%;
+}
+
+.dados {
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    color: black;
+    flex-direction: column;
+}
+
+.dado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 2%;
+}
+
+.dado span {
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    text-align: justify;
+    overflow: scroll;
+}
+
+
+.cadastrarAnimal {
+    display: flex;
+    width: 35vw;
+    height: 70vh;
+    background-color: white;
+    flex-direction: column;
+    overflow: scroll;
+    color: #80c2b6;
+    font-family: arial black;
+    font-family: 250px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.cadastrarAnimal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.cadastrarAnimal input {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cadastrarAnimal textarea {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cadastrarAnimal button {
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+    border: 2px solid black;
+    width: 100px;
+}
+
+.cadastrarAnimal button:hover {
+    opacity: 0.8;
+}
+
+.carac {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

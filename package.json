@@ -1,0 +1,23 @@
+{
+  "name": "projetointer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "eu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^6.9.15",
+    "path": "^0.12.7",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

@@ -1,0 +1,526 @@
+@font-face {
+    font-family: 'Mont-ExtraLight';
+    src: url('fonts/Mont-ExtraLight.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont-Heavy';
+    src: url('fonts/Mont-Heavy.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Definindo as cores principais do site */
+body {
+    background-color: #80c2b6;
+    /* Fundo cor água */
+    color: #ffffff;
+    /* Letras cor de vinho */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 99%;
+    align-items: center;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1000;
+    /* Para manter o header sobreposto ao conteúdo */
+    background-color: #80c2b6;
+    height: 100px;
+    /* Defina a altura do header */
+    /* padding: 20px; */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    /* Links com a cor de vinho */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.hidden {
+    top: -100px;
+    /* Esconde a nav-bar */
+}
+
+.header-logo {
+    width: 5vw;
+}
+
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Adicionando animação de fade-in */
+.fade-in {
+    display: none;
+    transition: display 2s ease-in;
+}
+
+/* Estado final da animação */
+.fade-in.visible {
+    display: block;
+}
+
+#home {
+    padding-top: 100px;
+    /* Adicione um padding correspondente à altura do header */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texts {
+    padding: 5px 10px;
+}
+
+.animal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 80vh;
+    padding: 10px;
+}
+
+.animal-grid a {
+    width: 50%;
+    height: 50%;
+}
+
+.animal-grid a img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-buttons button {
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+}
+
+#adocao {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#adocao form {
+    font-family: "Mont-Heavy";
+}
+
+#adocao ul {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 90vw;
+    height: 100%;
+}
+
+#adocao ul li {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+}
+
+#adocao ul li a {
+    width: 100%;
+    height: 90%;
+}
+
+#adocao ul li a img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+#adocao ul li button {
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+}
+
+#adocao ul li button:hover {
+    cursor: pointer;
+}
+
+
+#doar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 10px;
+    background-color: #ffffff;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 30px;
+    color: #80c2b6;
+
+}
+
+#doar p {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 50px;
+}
+
+
+#doar form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+    padding: 10px;
+    font-family: arial black;
+    gap: 5px;
+}
+
+#doar button {
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+}
+
+.doacao-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#doar .doacao-grid input {
+    text-align: center;
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+}
+
+.enviarDoacao {
+    text-align: center;
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+}
+
+#voluntarios {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 10px;
+    background-color: #ffffff;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 30px;
+    color: #80c2b6;
+
+}
+
+#voluntarios p {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 50px;
+}
+
+
+#voluntarios form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+    padding: 10px;
+    font-family: arial black;
+    gap: 10px;
+}
+
+#voluntarios button {
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+
+}
+
+#voluntarios form input,
+#voluntarios form textarea {
+    text-align: center;
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+}
+
+footer {
+    font-family: "Mont-Heavy";
+}
+
+.adoption {
+    position: relative;
+    display: inline-block;
+}
+
+.adoption a {
+    display: block;
+    position: relative;
+}
+
+.informacoes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro semi-transparente */
+    color: #fff;
+    /* Texto branco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 2;
+    /* Para garantir que a div fique por cima */
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: start;
+}
+
+.adoption:hover .informacoes {
+    opacity: 1;
+    visibility: visible;
+}
+
+.adoption button {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* login */
+
+.loginModal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 15vw;
+    background-color: #80c2b6;
+    border-radius: 15px;
+    z-index: 99;
+}
+
+.loginModal input[type=text],
+.loginModal input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.loginModal button {
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+    border: 2px solid black;
+}
+
+.loginModal button:hover {
+    opacity: 0.8;
+}
+
+
+.loginModal .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.loginModal .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    
+}
+
+.loginModal img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 5px;
+}
+
+.loginModal span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    .loginModal span.psw {
+        display: block;
+        float: none;
+    }
+
+    .loginModal .cancelbtn {
+        width: 100%;
+    }
+}
+
+.modalButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+    border: 2px solid black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #e5f2f0;
+}
+
+
+#contato {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+    padding: 10px;
+    font-family: arial black;
+    gap: 10px;
+    width: 25%;
+}
+
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato input {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#contato textarea {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#contato button {
+    font-family: "Mont-Heavy";
+    color: white;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #80c2b6;
+    border: 2px solid black;
+    width: 100px;
+}
+
+#contato button:hover {
+    opacity: 0.8;
+}

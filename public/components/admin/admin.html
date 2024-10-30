@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina administrativa</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/compressorjs@1.1.1/dist/compressor.min.js"></script>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header id="navbar">
+        <nav>
+            <ul>
+                <li><a id="getAdocao">Cadastrar animal</a></li>
+                <li><a id="getDoacao">Doações</a></li>
+                <li><a id="getVoluntarios">Voluntários</a></li>
+                <li><a href="/public/home.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="headers"></div>
+        <div class="dados"></div>
+    </div>
+    <div class="cadastrarAnimal">
+        <h1>Cadastrar animal</h1>
+        <form id="cadastrar">
+            <!-- Formulário de contato -->
+            <label>Nome:</label>
+            <input type="text" name="nome" placeholder="Nome" required>
+            <label>Descrição:</label>
+            <textarea name="desc" placeholder="Descrição" required></textarea>
+            <label>Idade:</label>
+            <input type="number" name="idade" placeholder="idade" required>
+            <label>Caracteristicas:</label>
+            <div class="carac">
+                <div class="option">
+                    <input class="option-checkbox" name="portegrande" type="checkbox" value="portegrande">
+                    <span>Porte grande</span>
+                </div>
+                <div class="option">
+                    <input class="option-checkbox" name="portemedio" type="checkbox" value="portemedio">
+                    <span>Porte médio</span>
+                </div>
+                <div class="option">
+                    <input class="option-checkbox" name="portepequeno" type="checkbox" value="portepequeno">
+                    <span>Porte pequeno</span>
+                </div>
+                <div class="option">
+                    <input class="option-checkbox" name="adulto" type="checkbox" value="adulto">
+                    <span>Adulto</span>
+                </div>
+                <div class="option">
+                    <input class="option-checkbox" name="filhote" type="checkbox" value="filhote">
+                    <span>Filhote</span>
+                </div>
+            </div>
+            <input type="file" name="foto" id="foto" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
