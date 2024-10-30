@@ -3,7 +3,7 @@
 
 ### Projeto de Adoção de Cachorros para ONG | 4º Período de Faculdade
 
-![Badge](https://img.shields.io/badge/Node.js-v14+-green) ![Badge](https://img.shields.io/badge/MySQL-v8-blue) ![Badge](https://img.shields.io/badge/HTML-CSS-JavaScript-lightgrey)
+![Badge](https://img.shields.io/badge/Node.js-v14+-green) ![Badge](https://img.shields.io/badge/MySQL-v8-blue)
 
 Este projeto foi desenvolvido com o objetivo de fornecer uma plataforma intuitiva e acessível para a adoção de cachorros por uma ONG, facilitando o cadastro de animais e voluntários, doações e o contato com interessados.
 
