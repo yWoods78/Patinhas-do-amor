@@ -15,7 +15,7 @@
 // RF7: Implementar um sistema de notificações por e-mail para interessados em adoção e voluntários sobre novos animais e eventos. -- feito
 
 
-const frango = true
+
 const express = require("express");
 const mysql = require('mysql2');
 const cors = require('cors');
